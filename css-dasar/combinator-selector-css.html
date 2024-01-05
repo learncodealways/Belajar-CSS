@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator Selector CSS</title>
+    <style>
+        /* descendant selector */
+           .descendant-selector p {
+            color: red;
+           }
+
+        /* child selector */
+        .child-selector > p {
+            color: green;
+        }
+
+        /* adjacent sibling selector*/
+        p + div{
+            color: blue ;
+        }
+
+        /* *general sibling selector */
+            header ~ p{
+                color: yellow;
+            }
+    </style>
+</head>
+<body>
+        <h1>Combinator Selector</h1>
+            <ul>
+                <li>Combinator adalah sesuatu yang menjelaskan relasi antar selector</li>
+                <li>Terdapat 4 selector untuk combinator</li>
+                <ol>
+                    <li>descendant selector (space)</li>
+                    <li>child selector(>)</li>
+                    <li>adjacent sibling selector(+)</li>
+                    <li>general sibling selector(~)</li>
+                </ol>
+            </ul>
+        
+     
+     
+     
+            <h2>Descendant Selector</h2>
+            <ul>
+                <li>Descendant Selector adalah selector untuk memilih element anak dari element yang dipilih</li>
+                <li>Contoh Descendant Selector kode di bawah ini</li>
+            </ul>
+        <!-- Contoh descendant selector -->
+        <pre>
+            <!-- contoh penulisan kode css  descendant selector -->
+            
+            div p {
+                color: red;
+            }
+            <!-- artinya selama tag p di dalam parent atau bungkus div dengan class descendant-selector tidak peduli dia ada didalam elemen apapun selama dia di dalam div dengan class descendant-selector, maka ubah warna jadi merah  -->
+        </pre>
+        <div class="descendant-selector">
+            <article>
+                <p>Ini dipilih</p>
+            </article>
+            <p>Ini dipilih</p>
+        </div>
+        <p>Ini tidak dipilih</p>
+
+    
+  
+  
+  
+        <h2>Child Selector</h2>
+        <ul>
+            <li>Child Selector adalah selector untuk memilih child / anak dari element yang dipilih</li>
+            <li>Contoh Child Selector kode di bawah ini</li>
+        </ul>
+        <!-- contoh Child Selector -->
+        <pre>
+            <!-- contoh penulisan kode css Child Selector -->
+
+            div > p {
+                color : green;
+            }
+            <!-- Artinya selama tag p menjadi anak atau child dari div dengan class child-selector maka ubah warna menjadi hijau, lalu mengapa tag di dalam elemen article tidak berubah menjadi hijau? karena tag di dalam article itu adalah child dari elemen article itu sendiri meskipun elemen artcle terdapat di dalam bungkus elemen div dengan class child-selector -->
+        </pre>
+
+        <div class="child-selector">
+            <article>
+                <p>Ini tidak dipilih</p>
+            </article>
+            <p>Ini dipilih</p>
+        </div>
+        <p>Ini tidak dipilih</p>
+        
+    
+    
+    
+    
+        <h2>Adjacent sibling Selector</h2>
+        <ul>
+            <li>Adjacent Sibling Selector digunakan untuk memilih satu element saudara setelah element yang dipilih</li>
+            <li>Sibling (saudara) element harus memiliki parent element yang sama</li>
+            <li>Contoh Adjacent sibling selector kode di bawah ini</li>
+        </ul>
+        <!-- Contoh Adjacent sibling selector -->
+
+        <pre>
+            <!-- contoh penulisa kode css adjacent sibling selector -->
+
+            p + div {
+                color : blue;
+            }
+            <!-- Aturan CSS ini akan membuat warna teks dari div kedua menjadi biru, tetapi tidak akan mempengaruhi p ketiga karena tidak menjadi saudara sejajar langsung dari p pertama. -->
+        </pre>
+
+        <div class="container">
+            <p>Ini adalah element1</p>
+            <div>Ini adalah element2</div>
+            <div>Ini tidak dipilih</div>
+            <p>Ini tidak dipilih</p>
+            
+           
+          </div>
+          <!-- Dalam sintaks ini:
+
+        element1: Elemen pertama, saudara sejajar yang langsung mendahului element2.
+        +: Kombinator saudara sejajar.
+        element2: Elemen kedua, saudara sejajar yang langsung mengikuti element1. -->
+    
+
+
+
+    <h2>General Sibling Selector</h2>
+            <ul>
+                <li>General Sibling Selector digunakan untuk memilih seluruh element saudara dari element yang dipilih, dimana harus memiliki parent yang sama</li>
+                <li>Contoh General Sibling Selector kode di bawah ini</li>
+            </ul>
+          
+            <!-- Contoh General Sibling Selector-->
+
+            <pre>
+                <!-- contoh penulisan kode css General Sibling Selector -->
+
+                    header ~ p {
+                        color : yellow;
+                    }
+
+                 <!-- Aturan CSS ini akan membuat warna teks dari tag p menjadi kuning, dan akan mempengaruhi p setelahya selama menjadi saudara sejajar langsung dan satu parent tag div. -->
+            </pre>
+
+            <div class="container">
+                <header>
+                    <p>Ini tidak dipilih</p>
+                </header>
+                <article>
+                    <p>Ini tidak dipilih</p>
+                </article>
+                <p>Ini dipilih</p>
+                <p>Ini dipilih</p>
+            </div>
+            <p>ini tidak dipilih</p>
+            
+
+    
+    
+ </body>
+</html>
