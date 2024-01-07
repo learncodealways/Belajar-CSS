@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selectors</title>
+    <style>
+        a[target="_self"]{
+            color: red;
+        }
+        
+        a[target="_blank"]{
+            color: yellow;
+        }
+    
+        p[title~="belajar"]{
+            color: skyblue;
+        }
+
+        p[title|="sepuh"]{
+            color: brown;
+        }
+
+        p[title^="HTML"]{
+                font-style: italic;
+        }
+
+        p[title$="PHP"]{
+            font-weight: bold;
+        }
+
+        p[title*="js"]{
+            font-style: italic;
+            color: rgb(236, 236, 0);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+   <h1>Attribute Selectors</h1>
+    <ul>
+        <li>CSS juga mendukung selector menggunakan atribut yang terdapat di tag HTML</li>
+        <li>Terdapat banyak cara untuk menggunakan Attribute Selector</li>
+    </ul>
+
+
+
+
+    <h2>CSS [attribute] Selector</h2>
+        <ul>
+            <li>Ada banyak sekali atrribute selector dan disini hanya mencontohkan sebagian saja</li>
+            <li>Berikut refrensi attribute selectors : <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors" target="_self" >References Attribute selectors</a></li>
+            <li>Contoh CSS [attribute] Selector</li>
+            <li>
+                <pre>
+                    a[target]{
+                        color : red ;
+                    }
+                    
+                    
+                </pre>
+            </li>
+        </ul>
+
+
+    <h2>CSS [attribute="value"] Selector</h2>
+        <ul>
+            <li>Selain itu kita juga bisa menyeleksi atribut dengan nlia tertentu misalnya :</li>
+            <li>tag atau elemen a yang memiliki atribut target dengan value _blank akan menjadi warna kuning</li>
+            <li><a href="https://www.w3schools.com/css/css_attribute_selectors.asp" target="_blank">More References Attribute selectors</a></li>
+            <li>
+                <pre>
+                    a [target="_blank"]{
+                        color:yellow;
+                    }
+                </pre>
+            </li>
+        </ul>
+
+
+    <h2>CSS [attribute~="value"]Selector</h2>
+        <ul>
+            <li>Arti ~ adalah memilih semua kata yang terdapat misalnya contoh kata "belajar"</li>
+        </ul>
+        <li>
+            <pre>
+                <p title="belajar pemrograman">Ini Dipilih</p>
+                <p title="belajarpemrograman">Ini tidak pilih</p>   
+
+                <!-- title "belajarpemrograman" ini tidak dipilih karena title tidak ada spasi sehingga css membaca belajarpemrograman  -->
+            </pre>
+        </li>
+
+
+
+    <h2>CSS [attribute|="value"] Selector</h2>
+        <ul>
+            <li>Arti dari | adalah memilih semua elemen yang memiliki atribut tertentu dengan memiliki value tertentu  atau value yang diikuti karakter -  dan kata tertentu misal value "sepuh" itu harus didepan misal value "sepuh-puh" bukan "puh-sepuh" value puh-sepuh tidak akan dieksekusi oleh css karena kalimat sepuh terdapat dibelakang kalimat dan tidak bisa apabila katanya langsung spasi dan tidak ada simbol - misal value "sepuh puh"</li>
+            <li>Contohnya adalah :
+                <pre>
+                    atribut title yang memiliki value "sepuh" atau "sepuh-puh"
+                </pre>
+            </li>
+        </ul>
+        <p title="sepuh">Ini dipilih</p>
+        <p title="sepuh-puh">Ini dipilih</p>
+        <p title="sepuh puh">Ini tidak dipilih</p>
+        <p title="puh-sepuh">Ini tidak dipilih</p>
+    
+
+    
+    <h2>CSS [attribute^="value"] Selector</h2>
+        <ul>
+            <li>Arti dari ^ adalah memilih semua element yang memiliki atribut dan value yang dimulai dengan, misal value dimulai dengan "HTML" maka HTML harus ada didepan kalimat apabila dia mau dieksekusi</li>
+            <li><pre>
+                Contohnya :
+            </pre></li>
+        </ul>
+        <p title="HTML CSS">Ini dipilih</p>
+        <p title="HTML-CSS">Ini dipilih</p>
+        <p title="HTML">Ini dipilih</p>
+        <p title="CSS-HTML">Ini tidak dipilih</p>
+        <p title="CSS HTML">Ini tidak dipilih</p>
+
+
+
+    <h2>CSS [attribute$="value"] Selector</h2>
+        <ul>
+            <li>Arti $ adalah memilih semua element yang memilki atribut dan value diakhiri dengan ini adalah kebalikan dari simbol ^ misal value diakhiri dengan PHP</li>
+            <li><pre>
+                contohnya :
+            </pre></li>
+        </ul>
+        <p title="PHP CSS">Ini tidak dipilih</p>
+        <p title="CSS-PHP">Ini dipilih</p>
+        <p title="PHP-CSS">Ini tidak dipilih</p>
+        <p title="CSS PHP">Ini  dipilih</p>
+        <p title="CSS-php">Ini tidak dipilih</p>
+
+
+    
+  <h2>CSS [attribute*="value"] Selector</h2>
+        <ul>
+            <li>Arti * memilih semua element yang memiliki atribut dan memilki value mengandung kata, misalnya kata "js"</li>
+            <li><pre>
+                Contohnya :
+            </pre></li>
+        </ul>
+        <p title="js">Ini dipilih</p>
+        <p title="JS">Ini tidak dipilih</p>
+        <p title="js-CSS">Ini dipilih</p>
+        <p title="CSS-JS">Ini tidak dipilih</p>
+        <p title="CSS-js">Ini  dipilih</p>
+
+
+
+    <h2>Attribute Selector Tanpa Tag</h2>
+        <ul>
+            <li>Saat menggunakan attrubute selector, nama tag sebenanrya tidak wajib, jadi kita bisa langsung menggunakan atrubute selector</li>
+            <li>Contohnya : <pre>
+                [tittle*="belajar"]{
+                    color: red;
+                }
+            </pre></li>
+            <li>Attribute Selector juga bisa digunakan pada Class atau ID</li>
+            <li>Contohnya : <pre>
+                .article[title*="belajar"]{
+                    color: red;
+                }
+
+                #ARTIKEL[title*="belajar"]{
+                    color: red;
+                    font-style: italic;
+                }
+            </pre></li>
+        </ul>
+</body>
+</html>
