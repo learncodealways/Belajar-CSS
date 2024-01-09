@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        input{
+            margin-top: 10px;
+        }
+        #email, #password, #submit{
+            border: .5px solid black;
+            border-radius: 8px;
+            padding: 8px;
+        }
+
+        #email:valid{
+            color: blue;
+        }
+        #email:invalid{
+            color: red;
+        }
+
+        #password:required{
+            color: red;
+        }
+
+        #submit{
+            color: white;
+            background-color: black;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Form</h1>
+        <ul>
+            <li>Saat kita membuat form, element input yang kita buat, semua bisa diatur menggunakan box model</li>
+            <li>Selain itu, khusus form terdapat pseudo-classes yang dikhususkan untuk input form</li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes#input_pseudo-classes" target="_blank">References-input-pseudo-classes</a></li>
+        </ul>
+
+        <form action="" method="get">
+            <fieldset>
+                <legend>Login</legend>
+                <input type="email" name="" id="email"><br>
+                <input type="password" name="" id="password" required><br>
+                <input type="submit" value="Login" id="submit"><br>
+
+               
+            </fieldset>
+        </form>
+</body>
+</html>
