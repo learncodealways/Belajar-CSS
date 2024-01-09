@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table, tr, th, td{
+            border: 2px solid black;
+            border-collapse: collapse;
+            width: 200px;
+            padding: 5px;
+            text-align: center;
+        }
+
+        tr:hover{
+            background-color: rgba(0, 0, 0,.8);
+            color: white;
+            
+        }
+
+        tr:nth-child(2n){
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Table</h1>
+        <ul>
+            <li>Saat kita membuat element table di HTML, kita akan banyak menggunakan Box Model</li>
+        </ul>
+
+    <h2>Table Border</h2>
+        <ul>
+            <li>Jika kita ingin mengatur border pada table, kita bisa menggunakan border pada table, tr, th, td dan lain-lain</li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border" target="_blank">References-border</a></li>
+            <li>Saat menggunakan border, kadang tiap kolom akan ada jarak, jika kita ingin menghilangkan jaraknya, kita bisa menggunakan border-collapse</li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-collapse" target="_blank">References-border-collapse</a></li>
+        </ul>
+
+    <h2>Table Size</h2>
+        <ul>
+            <li>Untuk mengatur ukuran table, kita bisa menggunakan property width dan height</li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/height" target="_blank">References-height</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/width" target="_blank">References-width</a></li>
+        </ul>
+
+        <h2>Table Alignment</h2>
+            <ul>
+                <li>Untuk mengatur posisi text pada tabel, kita bisa menggunakan property text-align atau writing-mode</li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-align" target="_blank">References-text-align</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/writing-mode" target="_blank">References-writing-mode</a></li>
+            </ul>
+
+
+            <h3>Table Nilai IPK Mahasiswa STMIK</h3>
+         
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nama</th>
+                        <th>IPK</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Muhammad Ramadhan</td>
+                        <td>3.80</td>
+                    </tr>
+                    <tr>
+                        <td>Joseva Elya Toisuta</td>
+                        <td>3.75</td>
+                    </tr>
+                    <tr>
+                        <td>Mardha Tillah</td>
+                        <td>3.85</td>
+                    </tr>
+                    <tr>
+                        <td>Muhammad Nazim</td>
+                        <td>3.50</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th>Nama</th>
+                        <th>IPK</th>
+                    </tr>
+                </tfoot>
+            </table>
+</body>
+</html>
