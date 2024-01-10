@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <style>
+        body{
+            counter-set: Judul 0;
+            counter-set: subjudul 0;
+        }
+        
+        h2{
+            counter-increment: Judul 1;
+            counter-reset: subjudul ;
+        }
+
+        h3{
+            counter-increment: subjudul 1;
+           
+        }
+
+        h2::before{
+          content: counter(Judul) ". ";
+        }
+
+        h3::before{
+            content: counter(Judul) ". " counter(subjudul) ". ";
+        }
+
+       
+
+    </style>
+</head>
+<body>
+    <h1>Counter</h1>
+        <ul>
+            <li>CSS memiliki kemampuan untuk membuat counter, ini sangat cocok untuk membuat penomoran tanpa kita harus lakukan secara manual</li>
+            <li>Kita bisa gunakan property counter-set untuk membuat counter</li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/counter-set" target="_blank">References-counter-set</a></li>
+            <li>Property counter-incerement untuk menaikkan counter</li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/counter-increment" target="_blank">References-counter-increment</a></li>
+            <li>Dan property counter-reset untuk melakukan reset counter</li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/counter-reset" target="_blank">References-counter-reset</a></li>
+            <li>Untuk mengambil nilai counter, bisa menggunakan function counter()</li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Counter_Styles/Using_CSS_counters" target="_blank">References-counter</a></li>
+        </ul>
+
+       <h2>Judul</h2>
+       <h3>subjudul</h3>
+       <h3>subjudul</h3>
+       <h3>subjudul</h3>
+       <h2>Judul</h2>
+       <h3>subjudul</h3>
+       <h3>subjudul</h3>
+       <h3>subjudul</h3>
+       <h2>Judul</h2>
+       <h3>subjudul</h3>
+       <h3>subjudul</h3>
+       <h3>subjudul</h3>
+</body>
+</html>
