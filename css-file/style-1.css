@@ -1,0 +1,84 @@
+body {
+    background-color: rgb(66, 53, 53);
+}
+
+.container{
+    margin: auto;
+    color: white;
+    background-color: #333;
+    width: 800px;
+    box-sizing: border-box;
+
+}
+
+header h1{
+    text-align: center;
+    padding: 10px;
+}
+
+.WEB{
+    color: rgb(241, 206, 206);
+}
+
+.site{
+    text-decoration: underline rgb(241, 206, 206) ;
+}
+
+.ul-1 li  {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.ul-1 a {
+    text-decoration: none;
+    color: white;
+    
+}
+
+.ul-2 li{
+    display: block;
+    margin-top: 10px;
+}
+
+.ul-2 a {
+    text-decoration: none;
+    color: wheat
+}
+
+.image{
+    background-image: url(/image/cristofer-maximilian-NSKP7Gwa_I0-unsplash.jpg);
+    height: 400px;
+    background-position: 0px -200px;
+    background-size: cover;
+}
+
+.article-1 {
+    padding: 20px;
+    text-align: justify;
+    background-color: rgb(67, 71, 71);
+    color: aqua;
+    border-bottom: 2px solid white;
+}
+
+.article-2{
+    padding: 30px;
+    text-align: center;
+    background-color: rgb(67, 71, 71);
+    color: khaki;
+}
+
+.article-3{
+    padding: 40px;
+    text-align: right;
+    background-color: rgb(67, 71, 71);
+    color: lawngreen;
+    border-top: 2px solid white;
+}
+
+footer{
+    text-align: center;
+    background-color: rgba(252, 54, 54, 0.973);
+    padding: 10px;
+    font-weight: bold;
+}
+
