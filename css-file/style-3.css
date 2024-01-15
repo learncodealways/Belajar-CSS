@@ -1,0 +1,165 @@
+/* clearfix */
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+ .cf:before,
+ .cf:after {
+     content: " "; /* 1 */
+     display: table; /* 2 */
+ }
+ 
+ .cf:after {
+     clear: both;
+ }
+ 
+ /**
+  * For IE 6/7 only
+  * Include this rule to trigger hasLayout and contain floats.
+  */
+ .cf {
+     zoom: 1;
+ }
+
+
+body{
+    background-color: black;
+   
+}
+
+.top-bar::after{
+    content: '🤣😂😊❤️‍🔥😎😍😒👌😘💕💕🎶🙌👍✌️🤞🤷‍♂️😁🎶❤️❤️❤️😁🤷‍♂️😂👌😘💕😊🙌🤞😉🎶😢💖👍💕😘';
+}
+
+
+.container{
+    width: 900px;
+    margin: auto;
+    box-sizing: border-box;
+    background-color: white;
+    border: 5px solid white;
+    padding: 10px;
+    position: relative;
+}
+
+.top-bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: aqua;
+    height: 40px;
+    z-index: 999;
+}
+
+.header-1{
+    text-align: center;
+}
+
+.image{
+    background-image: url(/image/cristofer-maximilian-NSKP7Gwa_I0-unsplash.jpg);
+    background-size: cover;
+    height: 300px;
+    background-position: 0;
+    border-radius: 6px;
+    border: 1px solid black;
+}
+
+nav ul li  {
+    list-style: none;
+}
+
+nav li a{
+    text-decoration: none;
+    
+}
+
+.header-2{
+    text-align: center;
+}
+
+.cf{
+text-align: center;
+}
+
+.artikel-1{
+    background-color: black;
+    color: white;
+    width: 300px;
+    padding: 10px;
+    border-radius: 6px;
+    float: left;
+    margin-right: 20px;
+}
+
+.artikel-2{
+    background-color: black;
+    color: white;
+    width: 200px;
+    padding: 10px;
+    border-radius: 6px;
+    float: left;
+}
+
+.sosial-media{
+    background-color: lightblue;
+    width: 200px;
+    position: relative;
+    height: 142px;
+    float: right;
+    margin-top: 20px;
+    border-radius: 10px;
+
+}
+
+.ig{
+    position: absolute;
+    top: 13px;
+    left: 10px;
+    color: white;
+}
+
+.ytb{
+    position: absolute;
+    top: 29px;
+    left: 35px;
+    color: white;
+}
+
+.twt{
+    position: absolute;
+    top: 49.5px;
+    left: 55px;
+    color: white;
+}
+
+.phn{
+    position: absolute;
+    top: 70px;
+    left: 70px;
+    color: white;
+}
+
+.git{
+    position: absolute;
+    top: 91px;
+    left: 97px;
+    color: white;
+}
+
+footer{
+    background-color: red;
+    padding: 20px;
+}
+
+.footer{
+    text-align: center;
+    color: white;
+    font-weight: 900;
+}
