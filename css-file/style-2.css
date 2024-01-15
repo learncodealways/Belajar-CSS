@@ -1,0 +1,132 @@
+/* clearfix */
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+ .cf:before,
+ .cf:after {
+     content: " "; /* 1 */
+     display: table; /* 2 */
+ }
+ 
+ .cf:after {
+     clear: both;
+ }
+ 
+ /**
+  * For IE 6/7 only
+  * Include this rule to trigger hasLayout and contain floats.
+  */
+ .cf {
+     zoom: 1;
+ }
+
+body{
+    background-color: burlywood;
+  
+
+}
+
+
+.container{
+    width: 2000px;
+    margin: auto;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.header-1{
+    text-align: center;
+}
+
+.header-1 .nav-1 ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+.header-1 .nav-1 li, a {
+    text-decoration: none;
+}
+
+.header-2{
+    text-align: center;
+}
+
+
+.artikel{
+    text-align: center;
+}
+
+.artikel-1, .artikel-2, .artikel-3{
+   background-color: aqua;
+   width: 500px;
+   float: left;
+  margin: 10px;
+  border-radius: 6px;
+  color: white;
+  border: 1px solid black;
+  font-weight: 600;
+}
+
+.link{
+ text-align: center;
+
+}
+
+.li-1{
+    list-style: none;
+    box-sizing: border-box;
+}
+ .nav-2, .nav-3, .nav-4{
+    
+    background-color: black;
+   display: inline-block;
+   margin: 10px;
+}
+
+.nav-2{
+    float: left;
+    width: 500px;
+}
+
+.nav-3{
+    float: left;
+    width: 500px;
+}
+
+.nav-4{
+    float: left;
+    width: 500px;
+}
+
+.a-1{
+    text-decoration: none;
+    color: white;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.a-1::after{
+content: '❤️‍🔥';
+}
+
+footer{
+    text-align: center;
+    background-color: red;
+    padding: 20px;
+    font-weight: 800;
+    font-style: italic;
+    color: white;
+}
+
+.p-1::after{
+    content: '😎';
+}
+
