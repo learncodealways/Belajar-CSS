@@ -34,5 +34,81 @@
         <li>Namun jika kita ingin Flex Item di wrap pada garis berbeda ketika dibutuhkan, maka kita bisa gunakan atribut flex-wrap : <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap">CSS Demo: flex-wrap</a> </li>
     </ul>
 
+    <h2>Flex Items</h2>
+    <ul>
+        <li>Komponen yang terdapat di dalam Flex Container, kita sebut dengan nama Flex Item</li>
+
+        <li>Selain melakukan pengaturan ke Flex Container, kita juga bisa melakukan pengaturan ke Flex Item</li>
+    </ul>
+
+    <h2>Order</h2>
+    <ul>
+        <li>Secara default urutan Flex Item akan ditampilkan sesuai dengan urutan kode HTML yang dibuat</li>
+
+        <li>Namun, jika kita ingin mengubah urutan ditampilkannya, kita bisa menggunakan atribut order : <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/order">CSS Demo: order</a></li>
+    </ul>
+
+    <h2>Flex Grow</h2>
+    <ul>
+        <li>Atribut flex-grow mendefinisikan kemampuan item fleksibel untuk berkembang jika diperlukan.</li>
+
+        <li>Atribut flex-grow menerima nilai yang berfungsi sebagai proporsi dari total.</li>
+
+        <li>Ini menentukan jumlah ruang yang tersedia di dalam wadah fleksibel yang harus digunakan oleh item tersebut.</li>
+
+        <li>Misal kita punya 5 Flex Item, dimana total dari 5 flex Item tersebut memiliki jumlah flex-grow 20, artinya per 1 grow adalah 100% / 20 = 5 %</li>
+
+        <li>Sehingga Flex Item yang memiliki nilai flex-grow 2 artinya memiliki ruang sebesar 10% : <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow">flex-grow</a></li>
+    </ul>
+
+    <h2>Flex Shrink</h2>
+    <ul>
+        <li>Jika flex-grow merupakan kemampuan untuk Flex Item untuk berkembang, maka atribut flex-shrink untuk menyusut ketika dibutuhkan</li>
+
+        <li>Biasanya kemampuan untuk menyusut dibutuhkan ketika memang ukuran halaman tidak cukup, dan kita bisa mengatur nilai factor dari penyusutannya antar Flex Item, sama seperti flex-grow : <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-shrink">CSS Demo: flex-shrink</a> </li>
+    </ul>
+
+    <h2>Flex Basis</h2>
+    <ul>
+        <li>Atribut flex-basis digunakan untuk membuat flex item mengambil ruang sebesar yang ditentukan, atau jika runagan tidak tersedia, ambil semampunya.</li>
+
+        <li>Jika kita menggunakan felx-shirnk:0, maka akan dipastikan bahwa flex item akan mengambil sejumlah flex-basis, walaupun ukuran layar tidak mencukupi <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-basis">CSS Demo: flex-basis</a></li>
+    </ul>
+
+    <h2>Flex Alignment</h2>
+    <ul>
+        <li>Flex Item yang terdapat di dalam Flex Container, bisa kita rapikan atau selaraskan dengan beberapa atribut</li>
+                
+            <ol>
+                <li><h3>Justify Content</h3></li>
+                <ul>
+                    <li>Saat kita menggunakan Flexbox, kita bisa menggunakan atribut justify-content menentukan bagaimana Web Browser menetukan jarak antar Flex Item <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content">CSS Demo: justify-content</a> </li>
+
+                </ul>    
+                     <li><h3>Align Items</h3></li>
+                        <ul>
+                            <li>Atribut align-items bisa digunakan untuk perataan Flex Item secara cross-axis atau vertikal <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/align-items">CSS Demo: align-items</a></li>
+                        </ul>
+                    <li><h3>Align Content</h3></li>
+                    <ul>
+                        <li>Atribut align-content digunaka  agar menyelaraskan Flex Item seperti justify-content</li>
+
+                        <li>Namun pada align-content, ini hanya bisa dilakukan jika menggunakan flex-wrap dengan nilai wrap atau wrap-reverse <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/align-content">CSS Demo: align-content</a> </li>
+                    </ul>
+
+                <li><h3>Gap</h3></li>
+                <ul>
+                    <li>Sebelumnya, untuk menambahkan gap(jarak)antar Fkex Item, kita biasanya menggunakan margin</li>
+
+                    <li>Saat menggunakan Flexbox, lebih baik gunakan Gap untuk menentukan jarak (baris) atau column(kolom)</li>
+                  
+                    <li><a href="CSS Demo: align-content">CSS Demo: gap</a></li>
+
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/row-gap">CSS Demo: row-gap</a></li>
+
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/column-gap">CSS Demo: column-gap</a></li>
+                </ul>
+            </ol>
+    </ul>
 </body>
 </html>
