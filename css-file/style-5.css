@@ -1,0 +1,377 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+   
+}
+
+nav{
+    display:  flex;
+    justify-content: space-evenly;
+    background-color: rgba(25, 25, 25, .8);
+    align-items: center;
+    /* padding: 20px 0; */
+    box-sizing: border-box;
+    top: 0;
+    right: 0;
+    left: 0;
+    position: fixed;
+    z-index: 999;
+    border-bottom: 2px solid #fff;
+   
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: all 300ms ease-in-out;
+}
+
+nav ul li a:hover{
+    background-color: rgba(207, 163, 67,.8);
+    padding: 10px;
+    border-radius: 6px;
+    border-top: 2px solid #fff;
+    
+}
+
+.menu i {
+    display: none;
+}
+
+nav header i {
+    background-color: rgba(207, 163, 67, .8);
+    padding: 15px;
+    border-radius: 50%;
+}
+
+nav header h1 {
+    color: #fff;
+    font-size: 2rem;
+}
+
+nav ul li .home {
+    background-color: rgb(207, 163, 67);
+    padding: 10px;
+    border-radius: 6px;
+   
+}
+
+.jumbotorn-section{
+    background-color: rgba(25, 25, 25, .8);;
+    position: relative;
+    top: 114px;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+
+
+    
+}
+
+.jumbotorn-konten {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.konten-1 h2,p,button{
+    color: #fff;
+}
+
+.konten-1 h2{
+    font-size: 1.8rem;
+}
+
+button{
+    background-color: rgb(207, 163, 67) ;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.konten-2 img {
+    width: 300px;
+    height: 300px;
+    border-top-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border: 1px solid rgb(207, 163, 67) ;
+}
+
+
+.role-based-roadmaps{
+    background-color:rgba(25, 25, 25, .8) ;
+    position: relative;
+    top: 95px ;
+    box-sizing: border-box;
+    border-bottom: 2px solid #fff;
+}
+
+
+.main-1 header h3{
+    color: #fff;
+    text-align: center;
+}
+
+
+.main-2{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    gap: 10px;
+    margin-top: 50px; 
+    flex-wrap: wrap;
+}
+.items{
+    background-color:#fff;
+    border-radius: 8px;
+    border: 1px solid rgb(207, 163, 67)  ;
+    width:150px;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 30%;
+
+}
+
+.items:nth-child(2n){
+    background-color:rgb(207, 163, 67) ;
+
+}
+
+.items:nth-child(2n) h3 a:hover{
+    color: #fff;
+}
+   
+.main-2 .items h3{
+    text-align: center;
+    border-radius: 6px;
+}
+
+.main-2 .items a{
+   text-decoration: none;
+   color: #000;
+   transition: all 300ms ease-in-out;
+}
+
+.main-2 .items p {
+    color: #000;
+}
+
+.main-2 .items a:hover{
+    color: rgb(207, 163, 67);
+}
+
+.footer header .meroadmap{
+    color: #fff;
+    font-size: 2rem
+}
+.footer{
+    background-color: #000;
+    position: relative;
+    top: 75px;
+    padding: 20px;
+    box-sizing: border-box;
+    
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+header, .belajar, .popular-tutorial{
+    width: 30%;
+}
+
+
+
+.belajar h4{
+    text-align: center;
+    color: #fff;
+    font-size: 1.2rem;
+}
+.belajar ul li {
+    list-style: none;
+}
+
+.belajar ul li a {
+    text-decoration: none;
+    line-height: 30px;
+    color: #fff;
+}
+.popular-tutorial h4{
+    text-align: center;
+    color: #fff;
+    font-size: 1.2rem;
+}
+.popular-tutorial ul li{
+list-style: none;
+}
+
+.popular-tutorial ul li a{
+    text-decoration: none;
+    line-height: 30px;
+    color: #fff;
+    
+}
+
+.foot {
+    text-align: center;
+}
+
+.sosmed ul li{
+    display: inline-block;
+    list-style: none;
+}
+
+.sosmed ul li a{
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+.foot p{
+    font-size: 1.2rem;
+}
+
+/* responsive */ 
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    nav ul{
+        display: none;
+    }
+
+    .menu i {
+        display: inline-block;
+        color: rgb(255,255,255);
+        transition: all 300ms ease-in-out;
+    }
+
+    .menu i:hover{
+        background-color: rgba(207, 163, 67, .8);
+        padding:  10px;
+        border-radius: 4px;
+    }
+
+    .jumbotorn-konten {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        margin-top: 10px;
+    }
+
+    .konten-2 img {
+        width: 200px;
+        height: 200px;
+        border-top-left-radius: 30%;
+        border-bottom-right-radius: 30%;
+        border-top-right-radius: 6px;
+        border-bottom-left-radius: 6px;
+    }
+
+    .header h1{
+        font-size: 1rem;
+    }
+
+    .konten-1 h2{
+        text-align: center;
+        font-size: 2rem;
+    }
+    .main-2{
+        display: flex;
+        justify-content: center;
+        align-items: center ;
+        gap: 10px;
+        margin-top: 50px; 
+        padding: 0 10px;
+        flex-wrap: wrap;
+       
+    }
+    .items{
+        background-color:#fff;
+        border-radius: 8px;
+        border: 1px solid rgb(207, 163, 67)  ;
+        width:150px;
+        padding: 10px;
+        box-sizing: border-box;
+        width: 90%;
+       
+    
+    }
+
+  footer{
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+
+   
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .items{
+        background-color:#fff;
+        border-radius: 8px;
+        border: 1px solid rgb(207, 163, 67)  ;
+        width:150px;
+        padding: 10px;
+        box-sizing: border-box;
+        width: 30%;
+}
+
+nav ul{
+    display: none;
+}
+
+.menu i {
+    display: inline-block;
+    color: rgb(255,255,255);
+    transition: all 300ms ease-in-out;
+}
+
+.menu i:hover{
+    background-color: rgba(207, 163, 67, .8);
+    padding:  10px;
+    border-radius: 4px;
+}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    nav ul{
+        display: flex;
+    }
+
+
+    .menu i {
+        display: none;
+    }
+    
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
