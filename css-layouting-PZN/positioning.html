@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning CSS</title>
+</head>
+<body>
+    <h1>Positioning</h1>
+    <ul>
+        <li>Positioning memungkinkan kita meletakkan posisi elemen di tempat yang tidak sesuai dengan Normal Flow</li>
+
+        <li>Misal meletakkan elemen di atas elemen lain, atau meletakkan elemen di posisi yang selalu sama di Viewport browser</li>
+
+        <li>Untuk mengubah posisi elemen, kita bisa menggunakan atribut position</li>
+
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position">CSS Demo: position</a></li>
+
+        <li>Secara deafult, position bernilai static, artinya dia akan ditempatkan sesuai dengan Normal Flow</li>
+    </ul>
+
+    <h1>Top, Bottom, Left dan Right</h1>
+    <ul>
+        <li>Jika kita ubah atribut position dari default value-nya, kita bisa mengatur elemen menggunakan atribut top, bottom, left dan right</li>
+
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/top">CSS Demo: top</a></li>
+
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/bottom">CSS Demo: bottom</a></li>
+
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/left">CSS Demo: left</a></li>
+
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/right">CSS Demo: right</a></li>
+    </ul>
+
+    <h1>Relative Positioning</h1>
+    <ul>
+        <li>Relative Positioning adalah posisi mirip seperti static Positioning, dimana element akan ditempatkan sesuai Normal Flow</li>
+
+        <li>Namun setelah ditempatkan, kita bisa mengubah posisi elemen</li>
+
+        <li>Pada static positioning, mengubah posisi tidak akan berdampak apapun</li>
+    </ul>
+
+    <h1>Absolute Positioning</h1>
+    <ul>
+        <li>Absolute positioning adalah menghapus elemen dari Normal Flow, bahkan tidak ada space yang digunakan sama sekali</li>
+        
+        <li>Posisi awal untuk elemen absolute adalag relative ke posisi terdekat dengan elemen sebelumnya, atau jika tidak ada berarti di awal block element parent nya </li>
+
+        <li>Jika elemen absolute tidak memiliki parent, maka parent nya adalah html</li>
+    </ul>
+
+    <h1>Z-Index</h1>
+    <ul>
+        <li>Saat kita menggunakan Relative dan Absolute Positioning, yang mulai mengganggu adalah elemen akan saling bertumpuk</li>
+
+        <li>Secara default saat menggunakan relative dan absolute, maka posisi akan diatas element yang static, tapi bagaimana jika ternyata kita ingin mengubah posisi tumpukan?</li>
+
+        <li>Untuk mengubah posisi tumpukan elemen, kita bisa menggunakan atribut z-index, yang secara default bernilai auto atau 0</li>
+
+        <li>Semakin tinggi nilai z-index,  artinya posisi akan semakin diatas</li>
+
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/z-index">CSS Demo: z-index</a></li>
+    </ul>
+
+    <h1>Fixed Positioning</h1>
+    <ul>
+        <li>Fixed positioning adalah menghapus elemen dari Normal Flow, bahkan tidak ada space yang digunakan sama seklai, jadi sama seperti absolute positioning</li>
+
+        <li>Posisi awal untuk elemen absolute adalah relative ke posisi terdekat dengan elemen sebelumnya, atau jika tidak ada, berarti di awal block element parentnya</li>
+
+        <li>Namun yang membedakan dari Absolute adalah, perubahan posisi pada element fixed, dia akan relative ke viewport(halaman web yang terlihat)</li>
+
+        <li>Oleh karena itu, jika halaman web kita scroll, maka elemen fixed akan diam ditempat, dan tidak akan mengikuti scroll</li>
+    </ul>
+
+    <h1>Sticky Positioning</h1>
+    <ul>
+        <li>Sticky positioning adalah gabungan antara relative dan fixed position</li>
+
+        <li>Sticky positioning akan menampilkan elemen seperti relative positioning, yang artinya dalam Normal Flow, namun ketika elemen di scroll dalam ambang batas yang sudah disesuaikan, maka otomatis akan menjadi fixed positioning</li>
+    </ul>
+</body>
+</html>
